@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Regression Test Suite]" parallel="tests">
+  <test thread-count="2" name="Scenario 2- Firefox(failed)" parallel="tests">
+    <parameter name="browsername" value="firefox"/>
+    <groups>
+      <run>
+        <include name="main test"/>
+        <exclude name="other test"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.tests">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="googleSearch" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.tests -->
+    </classes>
+  </test> <!-- Scenario 2- Firefox(failed) -->
+</suite> <!-- Failed suite [Regression Test Suite] -->

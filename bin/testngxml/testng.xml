@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression Test Suite" parallel="tests" thread-count="2">
+	<test name="Scenario 1-Chrome">
+		<parameter name="browsername" value="chrome" />
+		<classes>
+			<class name="tests.tests"></class>
+		</classes>
+	</test>
+	<test name="Scenario 2- Firefox">
+		<groups>
+			<run>
+				<include name="main test"/>
+				<exclude name="other test"/>
+			</run>
+		</groups>
+		<parameter name="browsername" value="firefox" />
+		<classes>
+			<class name="tests.tests"></class>
+		</classes>
+	</test>
+</suite>

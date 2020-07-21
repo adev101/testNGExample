@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="4" total="8" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression Test Suite" duration-ms="40400" started-at="2020-07-22T00:45:38 IST" finished-at="2020-07-22T00:46:18 IST">
+    <groups>
+      <group name="main test">
+        <method signature="tests.googleSearch(java.lang.String)[pri:1, instance:tests.tests@9660f4e]" name="googleSearch" class="tests.tests"/>
+        <method signature="tests.googleBrokenLink()[pri:2, instance:tests.tests@9660f4e]" name="googleBrokenLink" class="tests.tests"/>
+        <method signature="tests.googleSearch(java.lang.String)[pri:1, instance:tests.tests@6acdbdf5]" name="googleSearch" class="tests.tests"/>
+      </group> <!-- main test -->
+      <group name="other test">
+        <method signature="tests.googleBrokenLink()[pri:2, instance:tests.tests@9660f4e]" name="googleBrokenLink" class="tests.tests"/>
+        <method signature="tests.checkLanguages()[pri:3, instance:tests.tests@9660f4e]" name="checkLanguages" class="tests.tests"/>
+      </group> <!-- other test -->
+    </groups>
+    <test name="Scenario 2- Firefox" duration-ms="79" started-at="2020-07-22T00:45:38 IST" finished-at="2020-07-22T00:45:38 IST">
+      <class name="tests.tests">
+        <test-method status="PASS" signature="methodBeforeSUite()[pri:0, instance:tests.tests@9660f4e]" name="methodBeforeSUite" is-config="true" duration-ms="9" started-at="2020-07-22T00:45:38 IST" finished-at="2020-07-22T00:45:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodBeforeSUite -->
+        <test-method status="FAIL" signature="googleSearch(java.lang.String)[pri:1, instance:tests.tests@6acdbdf5]" name="googleSearch" duration-ms="16" started-at="2020-07-22T00:45:38 IST" data-provider="SearchString" finished-at="2020-07-22T00:45:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestNG]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at tests.tests.googleSearch(tests.java:48)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearch -->
+        <test-method status="FAIL" signature="closeBrowser()[pri:0, instance:tests.tests@6acdbdf5]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2020-07-22T00:45:38 IST" finished-at="2020-07-22T00:45:38 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at tests.BaseClass.closeBrowser(BaseClass.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="methodAfterSUite()[pri:0, instance:tests.tests@9660f4e]" name="methodAfterSUite" is-config="true" duration-ms="1" started-at="2020-07-22T00:46:19 IST" finished-at="2020-07-22T00:46:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodAfterSUite -->
+      </class> <!-- tests.tests -->
+    </test> <!-- Scenario 2- Firefox -->
+    <test name="Scenario 1-Chrome" duration-ms="40400" started-at="2020-07-22T00:45:38 IST" finished-at="2020-07-22T00:46:18 IST">
+      <class name="tests.tests">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:tests.tests@9660f4e]" name="startTest" is-config="true" duration-ms="1" started-at="2020-07-22T00:45:38 IST" finished-at="2020-07-22T00:45:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="startMessage()[pri:0, instance:tests.tests@9660f4e]" name="startMessage" is-config="true" duration-ms="1" started-at="2020-07-22T00:45:38 IST" finished-at="2020-07-22T00:45:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMessage -->
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:tests.tests@9660f4e]" name="launchBrowser" is-config="true" duration-ms="5355" started-at="2020-07-22T00:45:38 IST" finished-at="2020-07-22T00:45:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="googleSearch(java.lang.String)[pri:1, instance:tests.tests@9660f4e]" name="googleSearch" duration-ms="6341" started-at="2020-07-22T00:45:43 IST" data-provider="SearchString" finished-at="2020-07-22T00:45:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestNG]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearch -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.tests@9660f4e]" name="closeBrowser" is-config="true" duration-ms="4321" started-at="2020-07-22T00:45:50 IST" finished-at="2020-07-22T00:45:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:tests.tests@9660f4e]" name="launchBrowser" is-config="true" duration-ms="4154" started-at="2020-07-22T00:45:54 IST" finished-at="2020-07-22T00:45:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="googleBrokenLink()[pri:2, instance:tests.tests@9660f4e]" name="googleBrokenLink" duration-ms="7079" started-at="2020-07-22T00:45:58 IST" depends-on-methods="tests.tests.googleSearch" finished-at="2020-07-22T00:46:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleBrokenLink -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.tests@9660f4e]" name="closeBrowser" is-config="true" duration-ms="4129" started-at="2020-07-22T00:46:05 IST" finished-at="2020-07-22T00:46:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:tests.tests@9660f4e]" name="launchBrowser" is-config="true" duration-ms="4633" started-at="2020-07-22T00:46:09 IST" finished-at="2020-07-22T00:46:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="checkLanguages()[pri:3, instance:tests.tests@9660f4e]" name="checkLanguages" duration-ms="2" started-at="2020-07-22T00:46:14 IST" finished-at="2020-07-22T00:46:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLanguages -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.tests@9660f4e]" name="closeBrowser" is-config="true" duration-ms="4329" started-at="2020-07-22T00:46:14 IST" finished-at="2020-07-22T00:46:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="endMessage()[pri:0, instance:tests.tests@9660f4e]" name="endMessage" is-config="true" duration-ms="1" started-at="2020-07-22T00:46:18 IST" finished-at="2020-07-22T00:46:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endMessage -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:tests.tests@9660f4e]" name="endTest" is-config="true" duration-ms="1" started-at="2020-07-22T00:46:18 IST" finished-at="2020-07-22T00:46:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- tests.tests -->
+    </test> <!-- Scenario 1-Chrome -->
+  </suite> <!-- Regression Test Suite -->
+</testng-results>
